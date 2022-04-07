@@ -133,28 +133,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="G9e-eO-eL2">
-                                <rect key="frame" x="0.0" y="44" width="742" height="531"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="G9e-eO-eL2">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lR-aa-6Pr">
-                                        <rect key="frame" x="0.0" y="0.0" width="742" height="200"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PgN-Uy-tP5">
-                                                <rect key="frame" x="0.0" y="0.0" width="371" height="200"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IHi-Nj-1K5">
-                                                <rect key="frame" x="371" y="0.0" width="371" height="200"/>
-                                            </stackView>
-                                        </subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T2a-fr-D5N">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boY-Q6-TQE">
-                                        <rect key="frame" x="0.0" y="265" width="742" height="266"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bW7-un-GDE">
+                                        <rect key="frame" x="0.0" y="213" width="375" height="148"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zbN-e7-gOE">
+                                        <rect key="frame" x="0.0" y="426" width="375" height="148"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B1M-5z-xa9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B1M-5z-xa9" firstAttribute="bottom" secondItem="G9e-eO-eL2" secondAttribute="bottom" id="8Ta-OH-gnL"/>
+                            <constraint firstAttribute="trailing" secondItem="G9e-eO-eL2" secondAttribute="trailing" id="EdD-Ru-DaP"/>
+                            <constraint firstItem="G9e-eO-eL2" firstAttribute="leading" secondItem="B1M-5z-xa9" secondAttribute="leading" id="YQl-QM-8km"/>
+                            <constraint firstItem="G9e-eO-eL2" firstAttribute="top" secondItem="B1M-5z-xa9" secondAttribute="top" id="dF0-aL-MWm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aI1-YQ-ieI"/>
                 </viewController>
